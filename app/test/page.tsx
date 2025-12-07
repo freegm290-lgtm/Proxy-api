@@ -138,6 +138,57 @@ export default function TestPage() {
         <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Proxy Information</h2>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="text-center p-4">
+            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">No CORS</div>
+            <p className="text-gray-600 dark:text-gray-400">Bypass all cross-origin restrictions</p>
+          </div>
+          <div className="text-center p-4">
+            <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">10+</div>
+            <p className="text-gray-600 dark:text-gray-400">User Agents for rotation</p>
+          </div>
+          <div className="text-center p-4">
+            <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">∞</div>
+            <p className="text-gray-600 dark:text-gray-400">Unlimited file size support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+          }
+                             </div>
+            
+            <div>
+              <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">3. Download File</h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                Open the proxy URL in your browser or use it in download managers. The file will download directly through our proxy.
+              </p>
+            </div>
+
+            <div className="border-t border-gray-200 dark:border-gray-800 pt-6">
+              <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Supported File Types</h3>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { type: 'Videos', ext: '.mp4, .avi, .mov, .mkv' },
+                  { type: 'Audio', ext: '.mp3, .wav, .aac, .flac' },
+                  { type: 'Documents', ext: '.pdf, .doc, .xlsx, .ppt' },
+                  { type: 'Images', ext: '.jpg, .png, .gif, .webp' },
+                  { type: 'Archives', ext: '.zip, .rar, .7z, .tar' },
+                  { type: 'Others', ext: 'All binary files' },
+                ].map((item, index) => (
+                  <div key={index} className="border border-gray-200 dark:border-gray-800 rounded-lg p-3">
+                    <div className="font-medium text-gray-900 dark:text-white">{item.type}</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">{item.ext}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="border border-gray-300 dark:border-gray-700 rounded-xl p-6">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Proxy Information</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="text-center p-4">
         'use client'
 
 import { useState, useEffect } from 'react'
